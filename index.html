@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container mx-auto my-4 border-bottom border-3">
+      <div class="row mx-auto gap-4">
+        <div class="col-lg-5">
+          <img src="images/mac.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-lg-6">
+          <div>
+            <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+            <p>
+              Apple MI chip with 8-core CPU with 4 performance cores and 4
+              efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB
+              unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports
+              Magic Mouse Magic Keyboard -US English
+            </p>
+          </div>
+          <div class="mx-auto my-4">
+            <h5>Memory</h5>
+            <button
+              type="button"
+              id="memory-default"
+              class="btn btn-outline-primary"
+            >
+              8 GB unified Memory
+            </button>
+            <button
+              type="button"
+              id="memory-update"
+              class="btn btn-outline-secondary"
+            >
+              16 GB unified Memory
+            </button>
+          </div>
+          <div class="mx-auto my-4">
+            <h5>Storage</h5>
+            <button
+              type="button"
+              id="storage-256GB"
+              class="btn btn-outline-success"
+            >
+              256 GB SSD Storage
+            </button>
+            <button
+              type="button"
+              id="storage-512GB"
+              class="btn btn-outline-danger"
+            >
+              512 GB SSD Storage
+            </button>
+            <button
+              type="button"
+              id="storage-1TB"
+              class="btn btn-outline-warning"
+            >
+              1 TB SSD Storage
+            </button>
+          </div>
+          <div class="mx-auto my-4">
+            <h5>Chose your delivery option</h5>
+            <button
+              type="button"
+              id="delivery-default"
+              class="btn btn-outline-warning"
+            >
+              Friday, Aug 25 free delivery
+            </button>
+            <button
+              type="button"
+              id="delivery-update"
+              class="btn btn-outline-primary"
+            >
+              Friday, Aug 17 delivery charge $20
+            </button>
+          </div>
+          <div class="col-lg-8 mt-4">
+            <div class="row border-bottom justify-content-around">
+              <div class="col-9">
+                <h6>
+                  <b> Best Price</b>
+                </h6>
+              </div>
+              <div class="col-3">
+                <b>$1299</b>
+              </div>
+            </div>
+            <div class="row border-bottom">
+              <div class="col-9">
+                <h6>
+                  <b> Extra Memory Cost</b>
+                </h6>
+              </div>
+              <div class="col-3">
+                <b>$ <span id="memory-price">0</span></b>
+              </div>
+            </div>
+            <div class="row border-bottom">
+              <div class="col-9">
+                <h6>
+                  <b> Extra Storage Cost</b>
+                </h6>
+              </div>
+              <div class="col-3">
+                <b>$ <span id="storage-price">0</span></b>
+              </div>
+            </div>
+            <div class="row border-bottom border-2 border-primary">
+              <div class="col-9">
+                <h6>
+                  <b> Delivery Charge</b>
+                </h6>
+              </div>
+              <div class="col-3">
+                <b>$ <span id="delivery-charge">0</span></b>
+              </div>
+            </div>
+            <div class="row border-bottom">
+              <div class="col-9">
+                <h6>
+                  <b>Total</b>
+                </h6>
+              </div>
+              <div class="col-3">
+                <b>$ <span id="total-amount"> 1299</span></b>
+              </div>
+            </div>
+            <div class="my-4">
+              <h3>Add Promo Code</h3>
+              <input type="text" name="" id="promo-field" />
+              <button class="btn btn-success btn-sm" id="promo-button">
+                Apply
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="text-center">Total : $ <span id="final-amount">1299</span></h1>
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
